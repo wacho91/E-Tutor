@@ -1,9 +1,15 @@
 
+import { useState } from "react"
+
 import { motion } from "framer-motion"
 import { NavbarMenu } from "../../MockData/Data.jsx"
 import { MdComputer, MdMenu } from "react-icons/md"
 
+
 const Navbar = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
         <nav>
@@ -39,6 +45,9 @@ const Navbar = () => {
                     <button className="text-white bg-secondary font-semibold rounded-full px-6 py-2">Register</button>
                 </div>
                 {/*Mobile Hamburger Menu*/}
+                <div className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
+                    <MdMenu className="text-4xl"/>
+                </div>
             </div>
         </nav>
     </>
