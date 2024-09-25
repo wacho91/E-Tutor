@@ -4,6 +4,7 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { NavbarMenu } from "../../MockData/Data.jsx"
 import { MdComputer, MdMenu } from "react-icons/md"
+import ResponsiveMenu from "./ResponsiveMenu.jsx"
 
 
 const Navbar = () => {
@@ -50,6 +51,8 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
+        {/*Mobile Sidebar Section*/}
+        <ResponsiveMenu isOpen={isOpen}/>
     </>
   )
 }
