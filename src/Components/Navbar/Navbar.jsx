@@ -13,7 +13,11 @@ const Navbar = () => {
 
   return (
     <>
-        <nav>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+        >
             <div className="container flex justify-between items-center py-6">
                 {/*Logo Section*/}
                 <div className="text-2xl flex items-center gap-2 font-bold">
@@ -50,7 +54,7 @@ const Navbar = () => {
                     <MdMenu className="text-4xl"/>
                 </div>
             </div>
-        </nav>
+        </motion.div>
         {/*Mobile Sidebar Section*/}
         <ResponsiveMenu isOpen={isOpen}/>
     </>
