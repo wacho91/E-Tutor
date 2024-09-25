@@ -4,9 +4,9 @@ function App() {
   
 
   return (
-    <div>
+    <main className="overflow-x-hidden">
       <Navbar />
-    </div>
+    </main>
   )
 }
 
