@@ -3,6 +3,7 @@ import Hero from "./Components/Hero/Hero"
 import Navbar from "./Components/Navbar/Navbar"
 import NavbarBanner from "./Components/Navbar/NavbarBanner"
 import NumberCounter from "./Components/NumberCounter/NumberCounter"
+import SubjectCard from "./Components/SubjectCard/SubjectCard"
 import WhyChooseUs from "./Components/WhyChooseUs/WhyChooseUs"
 
 import Img1 from "./assets/banner1.png";
@@ -38,6 +39,7 @@ function App() {
       <WhyChooseUs />
       <Banner {...BannerDate} />
       <Banner {...BannerData2} reverse={true} />
+      <SubjectCard />
     </main>
   )
 }
