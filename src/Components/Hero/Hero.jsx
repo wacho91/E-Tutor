@@ -1,6 +1,6 @@
 
 import { FaPlay } from "react-icons/fa"
-import HeroImg from "../../Assets/hero.png"
+import HeroImg from "../../assets/hero.png"
 import { motion } from "framer-motion"
 import { SlideRight } from "../../Utiliy/Animation"
 
