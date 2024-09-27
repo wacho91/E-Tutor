@@ -1,3 +1,4 @@
+import Banner from "./Components/Banner/Banner"
 import Hero from "./Components/Hero/Hero"
 import Navbar from "./Components/Navbar/Navbar"
 import NavbarBanner from "./Components/Navbar/NavbarBanner"
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <NumberCounter />
       <WhyChooseUs />
+      <Banner />
     </main>
   )
 }
