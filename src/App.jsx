@@ -1,10 +1,11 @@
 import Banner from "./Components/Banner/Banner"
+import Footer from "./Components/Footer/Footer"
 import Hero from "./Components/Hero/Hero"
 import Navbar from "./Components/Navbar/Navbar"
 import NavbarBanner from "./Components/Navbar/NavbarBanner"
 import NumberCounter from "./Components/NumberCounter/NumberCounter"
 import SubjectCard from "./Components/SubjectCard/SubjectCard"
-import Testimonial from "./Components/Testimonial/Testimonial"
+// import Testimonial from "./Components/Testimonial/Testimonial"
 import WhyChooseUs from "./Components/WhyChooseUs/WhyChooseUs"
 
 import Img1 from "./assets/banner1.png";
@@ -41,7 +42,8 @@ function App() {
       <Banner {...BannerDate} />
       <Banner {...BannerData2} reverse={true} />
       <SubjectCard />
-      <Testimonial />
+      {/* <Testimonial /> */}
+      <Footer />
     </main>
   )
 }
